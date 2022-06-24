@@ -1,0 +1,106 @@
+.text{
+    max-width: 60vw;
+    margin: 0 auto;
+    margin-top: 5rem;
+    h3{
+        color: #2D9CDB;
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    h2{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+.story{
+    margin: 2rem auto;
+    display: grid;
+    gap: 2.5rem;
+    .email{
+        p{
+            color: #828282;
+        }
+    }
+    .input{
+        margin-top: 0.5rem;
+        border-radius: 12px;
+        width: 21rem;
+        height: 3.5rem;
+        background-color: #F2F2F2;
+        input{
+            width: 70%;
+            height: 100%;
+            padding: 1rem 2rem;
+            border: 0;
+            border-radius: 12px;
+            background-color: #F2F2F2;
+        }
+        button{
+            width: 30%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+            background-color: #2D9CDB;
+            color: #F2F2F2;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    img{
+        width: 90%;
+        border-radius: 8px;
+    }
+}
+@media(max-width: 870px){
+    .text{
+        max-width: 80%;
+        h2{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.85rem;
+        }
+    }
+}
+@media(max-width: 480px){
+    .text{
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 0.75rem;
+        }
+    }
+    .story{
+        .input{
+            width: 18rem;
+            height: 3rem;
+        }
+    }
+}
+@media(max-width: 320px){
+    .story{
+        .input{
+            width: 15rem;
+            height: 2rem;
+        }
+    }
+}

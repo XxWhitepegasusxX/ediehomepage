@@ -1,0 +1,19 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500;600;700&display=swap');
+
+//IMPORTED STYLES
+@import '../components/MenuMobile/menuMobile';
+@import '../components/Header/header';
+@import '../components/Hero/hero';
+@import '../components/Services/services';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+}
+a, li, ul{
+    text-decoration: none;
+    list-style: none;
+}

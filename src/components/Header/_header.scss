@@ -1,0 +1,96 @@
+header{
+    width: 100%;
+    padding: 1rem 10%;
+    top: 0;
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+
+    .logo{
+        h1{
+            font-family: 'Heebo', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 2.25rem;
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                filter: brightness(0.9);
+            }
+            &::after{
+                content: " ";
+                position: absolute;
+                width: 100%;
+                height: 0.15rem;
+                background-color: #333333;
+                left: 0;
+                bottom: 0;
+                transform: scale(0, 1);
+                transition: 0.3s;
+
+            }
+            &:hover::after{
+                transform: scale(1, 1);
+            }
+
+            
+        }
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        svg{
+            display: none;
+        }
+        ul{
+            display: flex;
+            gap: 2rem;
+            
+            li{
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5rem;
+                cursor: pointer;
+                position: relative;
+                &:hover{
+                    filter: brightness(0.9);
+                }
+                &::after{
+                    content: " ";
+                    position: absolute;
+                    width: 100%;
+                    height: 0.15rem;
+                    background-color: #333333;
+                    left: 0;
+                    bottom: 0;
+                    transition: 0.2s;
+                    transform: scale(0, 1);
+                    transform-origin: left;
+    
+                }
+                &:hover::after{
+                    width: 100%;
+                    transform: scale(1, 1);
+                }
+            }
+        }
+    }
+}
+@media(max-width: 860px){
+    header{
+        .menu{
+            display: none;
+        }
+        nav{
+            svg{
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
+    }
+}
